@@ -1,4 +1,4 @@
-# `Bash Commands
+# `Bash` Commands
 - `bash` confirms existence of bash
 - `exit` closes terminal session
 - `pwd` prints current working directory
