@@ -26,7 +26,8 @@ To install packages specific to a project, we use virtual environment. We don't 
 - `pip list` - list all packages in the environment
 - `pip list --local` - lists all packages in the local environment
 - `pip install [package_name]` - installs package
-- `pip freeze` - gives the package requirements in the environment (that can go into requirement.txt)
+- `pip freeze` - prints the package requirements in the environment
+- `pip freeze > requirements.txt` - writes package requirements in the environment into `requirement.txt`
 - `pip install -r requirements.txt` - (`-r` expects a requirement file) installs every required package listed
 - `deactivate` - goes out of the virtual environment
 - `rmdir [env_name] /s` - delete all stuff in virtual environment
