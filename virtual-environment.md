@@ -33,3 +33,14 @@ To install packages specific to a project, we use virtual environment. We don't 
 - `rmdir [env_name] /s` - delete all stuff in virtual environment
 
 It's common to put virtual environment inside project folder, but never put any project files in the virtual environment. The environment should not be committed and should be ignored.
+
+### Virtual environment in Jupyter Notebook
+
+#### Add venv
+
+- `pip install --user ipykernel` - Install Jupyter Notebook kernel
+- `python -m ipykernel install --user --name=myenv` - Add venv to Jupyter Notebook
+
+#### Remove venv
+
+- `jupyter kernelspec uninstall myenv` - Remove venv from Jupyter Notebook
