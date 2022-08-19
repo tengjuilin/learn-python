@@ -18,6 +18,16 @@ to see the directory of python it is running.
 
 To install packages specific to a project, we use virtual environment. We don't want to change the global package so that it works for one project and breaks for another.
 
+### `conda` environment
+
+- `conda env list` - view all environments
+- `conda create -n [env_name] python=[python_version]` - creates environment with specific python version
+- `conda env create -f environment.yml` - creates environment from `environment.yml` file
+- `conda env remove --name [env_name]` - removes environment
+- `conda activate [env_name]` - activates environment
+- `conda deactivate` - deactivates environment
+- `conda env export > environment.yml` - export environment to `environment.yml`
+
 ### Create a virtual environment (shell and `pip` commands)
 
 - `python -m venv [env_name]` - creates virtual environment directory in current directory
